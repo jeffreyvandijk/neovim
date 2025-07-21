@@ -3,4 +3,4 @@
     - name: Bad task without action
       ansible.builtin.debug:
         var: test
-    
+        
