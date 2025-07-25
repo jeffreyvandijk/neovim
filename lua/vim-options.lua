@@ -4,6 +4,12 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.wo.number = true
 vim.g.mapleader = " "
+
+vim.keymap.set('n', '<M-Up>',    ':wincmd k<CR>')
+vim.keymap.set('n', '<M-Down>',  ':wincmd j<CR>')
+vim.keymap.set('n', '<M-Left>',  ':wincmd h<CR>')
+vim.keymap.set('n', '<M-Right>', ':wincmd l<CR>')
+
 vim.diagnostic.config {
         severity_sort = true,
         float = { border = 'rounded', source = 'if_many' },
